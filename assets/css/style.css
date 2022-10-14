@@ -781,7 +781,40 @@ body {
   #EVENT
 \*-----------------------------------*/
 
-.event :is(.section-subtitle, .section-title) {
+/* review */
+.reviews {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.review {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.review-content {
+  display: flex;
+  gap: 8px;
+}
+.review svg {
+  margin-top: 2px;
+}
+.review button {
+  margin-top: 4px;
+  width: 100%;
+  padding: 6px;
+  color: #fff;
+  background: #a30ef9;
+  transition: all 0.2s ease;
+}
+.review button:hover {
+  background: #8231b1;
+}
+.event :is(.section-subtitle, .section-title),
+.section-title {
   text-align: center;
 }
 
@@ -1483,5 +1516,8 @@ body {
   .video-wrapper iframe {
     width: 90vw;
     height: 50vh;
+  }
+  .reviews {
+    flex-direction: column;
   }
 }
