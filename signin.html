@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <link rel="shortcut icon" href="./logo.png" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+  </head>
+
+  <body>
+    <div class="to-back">
+      <a href="./index.html"> Ortga qaytish </a>
+    </div>
+    <div class="wrapper">
+      <div class="title">
+        <h1>AL KAMIL</h1>
+      </div>
+      <form class="form" action="" onsubmit=" return sendtelegram()">
+        <div class="inputfield">
+          <label>Ismingiz</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input"
+            placeholder="Имя"
+            required
+          />
+        </div>
+        <div class="inputfield">
+          <label>Telefon Raqam</label>
+          <input
+            type="number"
+            nama="number"
+            id="number"
+            class="input"
+            placeholder="(90) 999 00 00"
+            required
+          />
+        </div>
+        <div class="inputfield">
+          <label for="course">Kurslar</label>
+          <div class="custom_select">
+            <select name="course" id="course">
+              <option value=""></option>
+              <option value="Ingliz Tili">Ingliz Tili</option>
+              <option value="Arab tili">Arab Tili</option>
+              <option value="Tarix">Tarix</option>
+              <option value="Turk">Turk</option>
+              <option value="Koreys">Koreys</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inputfield">
+          <label>Tavsiflar</label>
+          <textarea
+            class="textarea"
+            name="message"
+            id="message"
+            placeholder="Savollaringiz bo'lsa shu yerga yozishingiz Mumkin..."
+            required
+          ></textarea>
+        </div>
+        <div class="inputfield">
+          <input type="submit" value="Jo'natish" id="btn" class="btn" />
+        </div>
+        <div class="inputfield">
+          <input type="reset" value="Bekor qilish" class="btn" />
+        </div>
+      </form>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
