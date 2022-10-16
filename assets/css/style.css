@@ -723,6 +723,7 @@ body {
 }
 
 .course-card .card-footer {
+  margin-top: 6px;
   padding-block-start: 25px;
   border-block-start: 1px solid var(--cultured-2);
   display: flex;
@@ -1519,5 +1520,11 @@ body {
   }
   .reviews {
     flex-direction: column;
+  }
+  .btn-group a {
+    padding: 8px;
+  }
+  .btn-group span {
+    font-size: 1.8rem;
   }
 }
